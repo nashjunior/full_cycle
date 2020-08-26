@@ -12,13 +12,13 @@ import (
 )
 
 var (
-	clientId     = "app"
-	clientSecret = "417fc6bd-8945-4341-b8d6-343c77531d7c"
+	clientId     = "myclient"
+	clientSecret = "2ceceabe-fc3a-4c24-b7a7-b7fd9555d1c3"
 )
 
 func main() {
 	ctx := context.Background()
-	provider, err := oidc.NewProvider(ctx, "http://localhost:8080/auth/realms/demo")
+	provider, err := oidc.NewProvider(ctx, "http://localhost:8080/auth/realms/myrealm")
 
 	if err != nil {
 		log.Fatal(err)
